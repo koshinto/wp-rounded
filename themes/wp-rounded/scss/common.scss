@@ -1,0 +1,9 @@
+@use 'config/const' as const;
+
+body {
+  margin: 0;
+}
+
+.title {
+  color: const.$main-color;
+}

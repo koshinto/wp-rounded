@@ -1,3 +1,3 @@
 <aside>
-サイドバー
+The Sidebar
 </aside>

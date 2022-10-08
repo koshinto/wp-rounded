@@ -1,11 +1,8 @@
 <?php get_header(); ?>
-
-<!-- main-content -->
-<main id="main-content" role="main">
-
-<!-- posts -->
+<main id="main-content search" role="main">
+  
+<h2>「<?php the_search_query(); ?>」の検索結果</h2>
 <?php get_template_part('templates/loop-posts'); ?>
-<!-- end posts -->
 
 <!-- pagination -->
 <?php 
@@ -19,6 +16,4 @@ the_posts_pagination(
 ?>
 
 </main>
-<!-- end main-content -->
-
 <?php get_footer(); ?>

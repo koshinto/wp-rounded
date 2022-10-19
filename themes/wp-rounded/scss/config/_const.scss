@@ -1,1 +1,6 @@
 $main-color: rgb(150, 255, 125);
+
+@mixin init-list-style {
+  list-style: none;
+  padding-left: 0;
+}

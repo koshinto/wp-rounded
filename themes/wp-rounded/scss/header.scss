@@ -1,0 +1,18 @@
+@use 'config/const';
+
+//  Header
+header {
+  * {
+    @include const.init-list-style();
+  }
+
+  #menu-header-navigation{
+    li > ul {
+      display: none;
+    }
+
+    li:hover > ul {
+      display: block;
+    }
+  }
+}

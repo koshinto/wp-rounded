@@ -1,4 +1,4 @@
-<section class="side-child">
+<aside class="side-child">
   <h3 class="archive-title">カテゴリー一覧</h3>
   <ul>
     <?php
@@ -8,4 +8,4 @@
       wp_list_categories($args);
     ?>
   </ul>
-</section>
+</aside>

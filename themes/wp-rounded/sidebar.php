@@ -1,6 +1,7 @@
-<aside class="side">
+<section class="sidebar">
 <?php 
-  get_sidebar('categories');
-  get_sidebar('archives');
+  // get_sidebar('categories');
+  // get_sidebar('latests');
+  // get_sidebar('archives');
 ?>
-</aside>
+</section>

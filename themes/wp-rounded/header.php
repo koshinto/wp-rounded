@@ -14,16 +14,19 @@
 <?php wp_body_open(); ?>
 
 <header>
-<a href="<?php echo home_url('/'); ?>">The Header</a>
-
-<?php 
-$args = array(
-  'menu' => 'header-navigation',
-  'menu_class' => '',
-  'container' => false
-);
-wp_nav_menu($args);
+<?php
+  if( has_custom_logo() ):
+    the_custom_logo();
 ?>
+
+<?php else: ?>
+<a href="<?php echo home_url('/'); ?>">The Header</a>
+<?php endif; ?>
+
+<?php wp_nav_menu(array(
+  'theme_location' => 'header',
+  'container' => 'nav'
+)) ?>
 
 <?php get_search_form(); ?>
 </header>

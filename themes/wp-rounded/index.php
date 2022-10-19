@@ -5,7 +5,13 @@
 
 <!-- posts -->
 <?php get_template_part('templates/loop-posts'); ?>
-<!-- end posts -->
+
+<!-- widgets -->
+<?php if(is_active_sidebar('main-widget')): ?>
+<ul class="widgets">
+  <?php dynamic_sidebar('main-widget'); ?>
+</ul>
+<?php endif; ?>
 
 <!-- pagination -->
 <?php 

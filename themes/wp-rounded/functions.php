@@ -22,6 +22,13 @@ add_theme_support('post-thumbnails');
 // サムネイルのデフォルトサイズ
 set_post_thumbnail_size(300, 200);
 
+// svgを許可
+function custom_mime_types( $mimes ) {
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter( 'upload_mimes', 'custom_mime_types' );
+
 // ロゴの有効化
 add_theme_support('custom-logo', array(
   'width' => 75,

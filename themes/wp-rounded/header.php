@@ -18,9 +18,11 @@
   if( has_custom_logo() ):
     the_custom_logo();
 ?>
-
 <?php else: ?>
-<a href="<?php echo home_url('/'); ?>">The Header</a>
+<a href="<?php echo home_url('/'); ?>">
+<h2><?php bloginfo('name'); ?></h2>
+<p><?php bloginfo('description'); ?></p>
+</a>
 <?php endif; ?>
 
 <?php wp_nav_menu(array(
